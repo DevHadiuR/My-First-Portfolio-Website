@@ -29,42 +29,42 @@ function NavList() {
         </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-medium">
-        <NavLink
+        <a
           href="#skills"
           className="flex items-center  transition-colors hover:text-secondary"
-          style={({ isActive }) => {
-            return {
-              color: isActive && "2px solid text-secondary",
-            };
-          }}
+          // style={({ isActive }) => {
+          //   return {
+          //     color: isActive && "2px solid text-secondary",
+          //   };
+          // }}
         >
           Skills
-        </NavLink>
+        </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-medium">
-        <NavLink
+        <a
           href="#achievments"
           className="flex items-center  transition-colors hover:text-secondary"
         >
           Achievments
-        </NavLink>
+        </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-medium">
-        <NavLink
+        <a
           href="#projects"
           className="flex items-center  transition-colors hover:text-secondary"
         >
           Projects
-        </NavLink>
+        </a>
       </Typography>
 
       <Typography as="li" variant="small" className="p-1 font-medium">
-        <NavLink
+        <a
           href="#education"
           className="flex items-center  transition-colors hover:text-secondary"
         >
           Education
-        </NavLink>
+        </a>
       </Typography>
     </ul>
   );

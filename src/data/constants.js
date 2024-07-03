@@ -41,3 +41,27 @@ export const education = [
     degree: "ICSC(X), Science with Computer",
   },
 ];
+
+export const achievments = [
+  {
+    id: 0,
+    img: "https://www.programming-hero.com/header/ph_logo.svg",
+    role: "Frontend Focused Course",
+    company: "Programming Hero",
+    date: "Jan 2024 - June 2024",
+    desc: "I have honed my front-end web development skills through the comprehensive program offered by the Programming Hero team.",
+    skills: [
+      "Html",
+      "Css",
+      "Javascript",
+      "Tailwind css",
+      "React",
+      "Node Js",
+      "Mongno Db",
+      "Express Js",
+      "Firebase",
+      "Git & Github",
+    ],
+    doc: "https://drive.google.com/file/d/1pHIJh2tjzKtgPk349YESr99xz-0rRBht/view?usp=sharing",
+  },
+];

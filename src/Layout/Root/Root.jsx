@@ -33,7 +33,7 @@ const Root = () => {
     <ThemeProvider theme={darkTheme}>
       <Header></Header>
       <Body>
-        <div className=""><HeroSection></HeroSection></div>
+        <HeroSection></HeroSection>
         <Wrapper>
           <Outlet></Outlet>
         </Wrapper>

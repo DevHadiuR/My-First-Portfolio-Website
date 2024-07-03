@@ -3,6 +3,7 @@ import Education from "../../components/education/Education";
 import Achievments from "../../components/achievments/Achievments";
 import WhoAmI from "../../components/whoAmI/WhoAmI";
 import About from "../../components/about/About";
+import Skills from "../../components/skills/Skills";
 
 const Home = () => {
   return (
@@ -12,10 +13,14 @@ const Home = () => {
       </Helmet>
       <WhoAmI></WhoAmI>
       <div>
-      <About></About>
+        <About></About>
       </div>
-      <Education></Education>
-      <Achievments></Achievments>
+      <div>
+        <Skills></Skills>
+      </div>
+      <div>
+        <Achievments></Achievments>
+      </div>
     </div>
   );
 };
