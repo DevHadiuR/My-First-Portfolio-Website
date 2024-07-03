@@ -1,0 +1,147 @@
+/* AnimatedButton.css */
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.wave-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #4f8aff, #e3f2fd) border-box;
+  animation: spin 5s linear infinite;
+}
+
+.text-rotator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  margin: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin-reverse 10s linear infinite;
+}
+
+.text-rotator span {
+  font-size: 14px;
+  white-space: nowrap;
+  animation: text-spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes text-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-button {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.arrow-icon {
+  font-size: 24px;
+  color: #4f8aff;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .wave-border {
+    width: 100px;
+    height: 100px;
+    margin: -50px;
+  }
+
+  .text-rotator {
+    width: 120px;
+    height: 120px;
+    margin: -60px;
+  }
+
+  .animated-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .arrow-icon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .wave-border {
+    width: 80px;
+    height: 80px;
+    margin: -40px;
+  }
+
+  .text-rotator {
+    width: 100px;
+    height: 100px;
+    margin: -50px;
+  }
+
+  .animated-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow-icon {
+    font-size: 14px;
+  }
+}
