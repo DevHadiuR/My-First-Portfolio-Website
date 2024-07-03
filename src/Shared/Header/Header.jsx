@@ -116,7 +116,7 @@ const Header = () => {
     <Nav className="px-0 py-3 border-0 max-w-full ">
       <Navbar className="flex items-center justify-between px-6 max-w-screen-xl mx-auto bg-transparent bg-[#191924] border-0">
         <NavLogo to="/">
-          <a
+          <h1
             style={{
               display: "flex",
               alignItems: "center",
@@ -125,8 +125,15 @@ const Header = () => {
               cursor: "pointer",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-          </a>
+            {/* <DiCssdeck size="3rem" />{" "} */}
+            <p className="text-3xl flex justify-between items-center">
+              <span className="mr-2 text-secondary font-semibold">{"<"}</span>
+              <span className="font-signature text-xl md:text-3xl"> Hadiur
+                <span className="mx-2 text-secondary ">/</span>
+                 Rahman</span>
+              <span className="ml-3 text-secondary font-semibold">{">"}</span>
+            </p>
+          </h1>
         </NavLogo>
         <div className="hidden lg:block">
           <NavList />
