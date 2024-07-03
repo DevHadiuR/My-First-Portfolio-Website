@@ -209,7 +209,7 @@ export const ResumeButton = styled.a`
 
 const HeroSection = () => {
   return (
-    <div id="intro">
+    <div id="intro" className="">
       <HeroContainer>
         <HeroBg>
           <HeroBgAnimation />

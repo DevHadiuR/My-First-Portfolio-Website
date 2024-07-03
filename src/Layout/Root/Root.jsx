@@ -4,6 +4,7 @@ import Footer from "../../Shared/Footer/Footer";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "../../utils/Themes";
 import HeroSection from "../../components/heroSection/HeroSection";
+import SocialLinks from "../../components/socialLinks/SocialLinks";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -32,12 +33,14 @@ const Root = () => {
     <ThemeProvider theme={darkTheme}>
       <Header></Header>
       <Body>
-        <HeroSection></HeroSection>
+        <div className=""><HeroSection></HeroSection></div>
         <Wrapper>
           <Outlet></Outlet>
         </Wrapper>
       </Body>
       <Footer></Footer>
+
+      <SocialLinks></SocialLinks>
     </ThemeProvider>
   );
 };

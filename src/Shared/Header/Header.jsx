@@ -8,25 +8,25 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { DiCssdeck } from "react-icons/di";
+// import { DiCssdeck } from "react-icons/di";
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       <Typography as="li" variant="small" className="p-1 font-medium">
-        <NavLink
+        <a
           href="#intro"
           className="flex items-center  transition-colors hover:text-secondary"
         >
           Intro
-        </NavLink>
+        </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-medium">
-        <NavLink
+        <a
           href="#about"
           className="flex items-center  transition-colors hover:text-secondary"
         >
           About
-        </NavLink>
+        </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-medium">
         <NavLink
@@ -128,9 +128,12 @@ const Header = () => {
             {/* <DiCssdeck size="3rem" />{" "} */}
             <p className="text-3xl flex justify-between items-center">
               <span className="mr-2 text-secondary font-semibold">{"<"}</span>
-              <span className="font-signature text-xl md:text-3xl"> Hadiur
-                <span className="mx-2 text-secondary ">/</span>
-                 Rahman</span>
+              <span className="font-signature text-xl md:text-3xl">
+                {" "}
+                Hadiur
+                <span className="mx-2 text-secondary ">\</span>
+                Rahman
+              </span>
               <span className="ml-3 text-secondary font-semibold">{">"}</span>
             </p>
           </h1>

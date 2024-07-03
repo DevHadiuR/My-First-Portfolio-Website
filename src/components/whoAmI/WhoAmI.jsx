@@ -1,7 +1,7 @@
 const WhoAmI = () => {
   return (
     <div>
-      <h1>who am i</h1>
+      <h1></h1>
     </div>
   );
 };
