@@ -6,6 +6,7 @@ import { darkTheme } from "../../utils/Themes";
 import HeroSection from "../../components/heroSection/HeroSection";
 import SocialLinks from "../../components/socialLinks/SocialLinks";
 import Projects from "../../components/projects/Projects";
+import Education from "../../components/education/Education";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -39,6 +40,9 @@ const Root = () => {
           <Outlet></Outlet>
         </Wrapper>
         <Projects></Projects>
+        <Wrapper>
+          <Education></Education>
+        </Wrapper>
       </Body>
       <Footer></Footer>
 

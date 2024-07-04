@@ -2,6 +2,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoCallOutline } from "react-icons/io5";
 import "./socialLinksAnimate.css";
+
 const SocialLinks = () => {
   const links = [
     {

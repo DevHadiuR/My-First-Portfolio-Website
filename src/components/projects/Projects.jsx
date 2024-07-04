@@ -10,7 +10,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-import "./animatedbtn.css";
+import "./animated-btn.css";
 
 const Projects = () => {
   const portfolios = [

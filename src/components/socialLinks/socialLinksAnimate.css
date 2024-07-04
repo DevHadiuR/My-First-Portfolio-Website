@@ -1,4 +1,4 @@
-@keyframes wave {
+@keyframes wave2 {
   0% {
     background-position: 0% 0%;
   }
@@ -13,6 +13,6 @@
 .li-background {
   background: linear-gradient(to bottom, #1b1d29, #2f1937, #d100ff, #9700ff);
   background-size: 100% 200%; /* Adjust height based on your preference */
-  animation: wave 2s infinite;
+  animation: wave2 2s infinite;
   transition: background 0.5s ease-in-out;
 }
