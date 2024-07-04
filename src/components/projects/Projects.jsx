@@ -11,6 +11,7 @@ import {
 } from "@material-tailwind/react";
 
 import "./animated-btn.css";
+import styled from "styled-components";
 
 const Projects = () => {
   const portfolios = [
@@ -24,6 +25,17 @@ const Projects = () => {
       clientLink:
         "https://github.com/DevHadiuR/PHA12-NovaHomes-Proj-Client-Side.git",
       liveLink: "https://assignment-12-novahomes-proj.web.app/",
+      tags: [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "tailwind",
+        "mongodb",
+        "node",
+        "express js",
+        "firebase",
+      ],
     },
     {
       id: 2,
@@ -35,6 +47,17 @@ const Projects = () => {
       clientLink:
         "https://github.com/DevHadiuR/PHA11-TechTrove-Proj-Client-Side.git",
       liveLink: "https://assignment-11-techtrove-proj.web.app/",
+      tags: [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "tailwind",
+        "mongodb",
+        "node",
+        "express js",
+        "firebase",
+      ],
     },
     {
       id: 3,
@@ -46,11 +69,40 @@ const Projects = () => {
       clientLink:
         "https://github.com/DevHadiuR/PHA10-MaesTria-Proj-Client-Side.git",
       liveLink: "https://assignment-10-sculpture-proj.web.app/",
+      tags: [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "tailwind",
+        "mongodb",
+        "node",
+        "express js",
+        "firebase",
+      ],
     },
   ];
 
+  const Tags = styled.div`
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  `;
+
+  const Tag = styled.span`
+    font-size: 12px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.primary + 15};
+    padding: 2px 8px;
+    border-radius: 10px;
+  `;
+
   return (
-    <div id="projects" name="projects" className="w-full text-white">
+    <div id="projects" name="projects" className="w-full text-white mt-20">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -63,10 +115,19 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolios.map(
-            ({ id, src, title, desc, serverLink, clientLink, liveLink }) => (
+            ({
+              id,
+              src,
+              title,
+              desc,
+              serverLink,
+              clientLink,
+              liveLink,
+              tags,
+            }) => (
               <Card
                 key={id}
-                className="mt-6 rounded-lg bg-[#171721] text-white shadow-pink-300 flex flex-col"
+                className="mt-8 rounded-lg bg-[#171721] text-white shadow-pink-300 flex flex-col"
               >
                 <CardHeader className="relative h-72">
                   <img
@@ -75,6 +136,13 @@ const Projects = () => {
                     alt="card-image"
                   />
                 </CardHeader>
+
+                <Tags className="mx-auto">
+                  {tags?.map((tag, index) => (
+                    <Tag key={index}>{tag}</Tag>
+                  ))}
+                </Tags>
+
                 <CardBody className="flex-grow">
                   <Typography
                     variant="h5"

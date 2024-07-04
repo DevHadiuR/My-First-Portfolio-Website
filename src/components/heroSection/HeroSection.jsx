@@ -6,6 +6,7 @@ import Typewriter from "typewriter-effect";
 
 import heroImg from "../../assets/images/heroImg.jpg";
 import HeroBgAnimation from "../heroBgAnimation/HeroBgAnimation";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -201,8 +202,11 @@ export const ResumeButton = styled.a`
     
     
     @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
+        padding: 10px 0;
+        font-size: 16px;
+        width: 95%;
+    max-width: 180px;
+
     } 
 
 `;
@@ -232,15 +236,15 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display">
-              Check Resume
+            <ResumeButton className="flex justify-center items-center gap-3" href={Bio.resume} target="display">
+              Check Resume <FaExternalLinkAlt className="text-sm md:text-base"/>
             </ResumeButton>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
             {/* <Img src={heroImg} alt="hero-image" /> */}
             <div className="avatar">
-              <div className="ring-primary ring-offset-base-100 w-56 md:w-64 lg:w-96  rounded-full ring ring-offset-2">
+              <div className="ring-primary ring-offset-base-100 w-52 md:w-64 lg:w-96  rounded-full ring ring-offset-2">
                 <img src={heroImg} />
               </div>
             </div>

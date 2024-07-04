@@ -88,7 +88,7 @@ const ContactButton = styled.input`
 
 const Contacts = () => {
   return (
-    <section>
+    <section className="pb-24">
       <div className="w-[80%] mx-auto mt-24">
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
           Let's Work Together
@@ -99,7 +99,7 @@ const Contacts = () => {
       </div>
       <div className="container">
         <main className="row  -mt-20">
-          <section className="col left">
+          <section className="col left pt-8 md:pt-0">
             <div className="contactInfo">
               <div className="iconGroup">
                 <div className="icon flex justify-center items-center">

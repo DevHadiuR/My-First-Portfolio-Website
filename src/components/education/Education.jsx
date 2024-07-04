@@ -76,7 +76,7 @@ const TimelineSection = styled.div`
 
 const Education = () => {
   return (
-    <Container id="education">
+    <Container id="education" className="mt-20">
       <Wrapper>
         <Title>Education</Title>
         <Desc>

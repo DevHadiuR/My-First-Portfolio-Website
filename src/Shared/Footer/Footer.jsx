@@ -83,7 +83,7 @@ const Copyright = styled.p`
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer className="">
       <FooterWrapper>
         <Logo className="font-signature text-5xl font-semibold ">Hadiur Rahman</Logo>
         <Nav>
