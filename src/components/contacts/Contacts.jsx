@@ -91,7 +91,7 @@ const Contacts = () => {
     <section>
       <div className="w-[80%] mx-auto mt-24">
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-          Contact
+          Let's Work Together
         </p>
         <p className="py-6 font-serif text-xl opacity-90">
           Feel free to reach out to me for any questions or opportunities!

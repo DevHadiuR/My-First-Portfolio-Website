@@ -3,13 +3,13 @@ export const Bio = {
   roles: ["Frontend Developer", "React Developer"],
   description:
     "Junior Front-End Developer || Creating vibrant, user-centric websites with seamless experiences || Passionate about exploring and mastering modern technologies.",
-  github: "https://github.com/rishavchanda",
+  github: "https://github.com/DevHadiuR",
   resume:
     "https://drive.google.com/file/d/1pHIJh2tjzKtgPk349YESr99xz-0rRBht/view?usp=sharing",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  twitter: "https://twitter.com/RishavChanda",
-  insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
+  linkedin: "https://www.linkedin.com/in/hadiur-rahman/",
+  twitter: "https://x.com/Hadiur007",
+  insta: "https://www.instagram.com/itz._.adib/",
+  facebook: "https://www.facebook.com/hadiur.rahman.777",
 };
 
 import collegeImg from "../assets/project-images/College.jpg";

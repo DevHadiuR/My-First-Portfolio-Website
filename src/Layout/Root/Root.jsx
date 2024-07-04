@@ -45,8 +45,8 @@ const Root = () => {
           <Education></Education>
           <Contacts></Contacts>
         </Wrapper>
+        <Footer></Footer>
       </Body>
-      <Footer></Footer>
 
       <SocialLinks></SocialLinks>
     </ThemeProvider>
