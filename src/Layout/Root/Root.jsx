@@ -7,6 +7,7 @@ import HeroSection from "../../components/heroSection/HeroSection";
 import SocialLinks from "../../components/socialLinks/SocialLinks";
 import Projects from "../../components/projects/Projects";
 import Education from "../../components/education/Education";
+import Contacts from "../../components/contacts/Contacts";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -42,6 +43,7 @@ const Root = () => {
         <Projects></Projects>
         <Wrapper>
           <Education></Education>
+          <Contacts></Contacts>
         </Wrapper>
       </Body>
       <Footer></Footer>
