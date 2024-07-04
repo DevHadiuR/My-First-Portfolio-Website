@@ -1,0 +1,30 @@
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wavy-button {
+  background: linear-gradient(270deg, #a33eb7, #e91e63);
+  background-size: 400% 400%;
+  animation: wave 2s ease-in-out infinite;
+  border: 2px solid transparent;
+  border-radius: 9999px; /* Fully rounded corners */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}
+
+.wavy-button:hover {
+  transform: scale(1.05);
+}

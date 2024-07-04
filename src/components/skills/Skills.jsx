@@ -99,7 +99,7 @@ const Skills = () => {
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             My Skills
           </p>
-          <p className="py-6">
+          <p className="py-6 font-serif text-lg">
             Here are some of my skills on which I have been learning on for the
             past few months.
           </p>

@@ -52,7 +52,7 @@ const Title = styled.div`
 const Desc = styled.div`
   text-align: center;
   max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
+
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 16px;
@@ -75,7 +75,7 @@ const Achievments = () => {
     <Container id="achievments">
       <Wrapper>
         <Title>Achievments</Title>
-        <Desc className="font-serif text-lg">
+        <Desc className="font-serif text-lg text-white opacity-90">
           Here, I proudly showcase my accomplishments and milestones achieved
           throughout my journey in web development and beyond, reflecting my
           dedication, growth, and the expertise I've acquired along the way
