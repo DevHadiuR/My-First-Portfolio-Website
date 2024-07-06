@@ -1,2 +1,2 @@
 ## Live Site URL
-Visit our live site here: [Portfolio](https://hadiur-rahman-portfolio.netlify.app/)
+Visit my portfolio live site here: [Hadiur Rahman](https://hadiur-rahman-portfolio.netlify.app/)
